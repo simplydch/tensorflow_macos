@@ -53,7 +53,7 @@ function graceful_error () {
   exit 1
 }
 
-bash ./$INSTALLER_SCRIPT --prompt || graceful_error 
+bash ./install_venv.sh --prompt || graceful_error 
 
 popd
 rm -rf $tmp_dir
